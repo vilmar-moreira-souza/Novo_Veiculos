@@ -1,11 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #414950;
 
+}
+.classMenu{
+    display: none;
 }
 
 .menu {
@@ -41,8 +45,7 @@ body {
 
 .menu ul li:hover {
     border: solid 1px #fff;
-    background-color: #004849;
-    |important;
+    background-color: #004849;   
     cursor: pointer;
 }
 
@@ -52,8 +55,8 @@ body {
 }
 
 
-p {
-    position: relative;
+p { 
+    text-align: justify;   
     margin: 5px;
     padding-left: 10px;
     padding-right: 5px;
@@ -145,11 +148,34 @@ footer {
 
 
 
-@media(max-width: 520px) {
-    /*celular 520 -tablet 768*/
-    /*520 originalmente */
+@media(max-width: 640px) {
+    /*celular -tablet 6408*/
+    #bMenu:hover{
+        cursor: pointer;
+    } 
+  #bMenu{          
+      margin-left: 3vw;      
+      z-index: 1;
+  }
+  #bLogo{                        
+      margin-left: 79vw;
+  }
+  .classMenu{
+    height: 45px;
+    width: auto;  
+      display: inline;
+      position: fixed;
+      margin-top: -45px;
+      
+  }
     .menu ul {
-        display: block;
+        margin-top: 45px;
+        display: none;
+    }
+    .barra{
+
+        height: 45px;
+        
     }
     .lado1 {
         float: left;
